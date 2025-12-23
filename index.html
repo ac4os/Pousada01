@@ -3,147 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recanto dos Colibris | Santa Teresa - ES</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Recanto dos Colibris | Lazer em Família</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="header">
-        <div class="container header-flex">
-            <div class="brand">
-                <img src="imagens/logo.jpg" alt="Logo Recanto dos Colibris" class="logo-img">
-                <div class="brand-text">
-                    <h1>Recanto dos Colibris</h1>
-                    <span>Pousada & Ecoturismo</span>
-                </div>
+    <header class="top-header">
+        <div class="container header-content">
+            <div class="brand-box">
+                <img src="imagens/logo.jpg" alt="Logo" class="logo-circle">
+                <h1>Recanto dos Colibris</h1>
             </div>
-            
-            <nav class="navbar" id="navbar">
-                <a href="#home">Início</a>
-                <a href="#sobre">A Pousada</a>
-                <a href="#lazer">Lazer</a>
-                <a href="#galeria">Fotos</a>
-                <a href="https://wa.me/5527999999999" class="btn-reserva">Reservar</a>
-            </nav>
-            <div class="menu-icon" onclick="toggleMenu()">🌲</div>
+            <a href="https://wa.me/5527999999999" class="cta-whatsapp">Falar no Zap! 💬</a>
         </div>
     </header>
 
-    <section id="home" class="hero">
-        <div class="hero-overlay">
-            <h2>Onde a natureza abraça sua família</h2>
-            <p>Santa Teresa/ES • Ecoturismo • Lazer • Aconchego</p>
-            <div class="hero-btns">
-                <a href="#lazer" class="btn-hero">Ver Atrações</a>
-                <a href="https://wa.me/5527999999999" class="btn-hero outline">WhatsApp</a>
-            </div>
+    <section class="hero-fun">
+        <div class="hero-card">
+            <h2>O melhor lugar para sua família! 🌿</h2>
+            <p>Trilhas, piscina, cachoeira e muita diversão em Santa Teresa.</p>
         </div>
     </section>
 
-    <section id="sobre" class="section">
-        <div class="container grid-2">
-            <div class="text-content">
-                <h3 class="section-title">Nossa Essência 🍃</h3>
-                <p>O <strong>Recanto dos Colibris</strong> é um refúgio de paz em Santa Teresa, a terra dos colibris. Aqui, o turismo ecológico se une ao lazer familiar.</p>
-                <p>Seja para curtir o frio da serra ou se refrescar em nossas piscinas naturais, oferecemos a estrutura completa para grupos e casais que buscam reconexão.</p>
-                
-                <div class="quote-box">
-                    <h4>Ecoturismo Consciente</h4>
-                    <p>"Preservar o equilíbrio do meio ambiente enquanto proporcionamos bem-estar e memórias inesquecíveis para nossos hóspedes."</p>
-                </div>
-            </div>
-            <div class="image-content">
-                <img src="imagens/natureza-jardim.jpg" alt="Jardim do Recanto">
-            </div>
-        </div>
-    </section>
-
-    <section id="lazer" class="section bg-light">
+    <section class="bg-wood">
         <div class="container">
-            <h3 class="section-title center">Diversão no Recanto</h3>
-            <p class="subtitle">Cachoeira, piscinas e muita área verde.</p>
-            <div class="attractions-grid">
-                <div class="attraction-card"><span>🌊</span><h4>Cachoeira</h4></div>
-                <div class="attraction-card"><span>🏊</span><h4>Piscinas</h4></div>
-                <div class="attraction-card"><span>🎣</span><h4>Pesque Pague</h4></div>
-                <div class="attraction-card"><span>🦢</span><h4>Pedalinho</h4></div>
-                <div class="attraction-card"><span>🎠</span><h4>Parquinho</h4></div>
-                <div class="attraction-card"><span>🎱</span><h4>Jogos</h4></div>
+            <h2 class="title-hand">Diversão Garantida</h2>
+            <div class="polaroid-grid">
+                <div class="polaroid">
+                    <div class="photo">
+                        <img src="imagens/lazer-piscina.jpg" alt="Piscina">
+                    </div>
+                    <p>Mergulho Refrescante</p>
+                </div>
+                <div class="polaroid rotate-right">
+                    <div class="photo">
+                        <img src="imagens/natureza-jardim.jpg" alt="Jardim">
+                    </div>
+                    <p>Muita Natureza</p>
+                </div>
+                <div class="polaroid">
+                    <div class="photo">
+                        <img src="imagens/cafe-detalhe.jpg" alt="Café">
+                    </div>
+                    <p>Comida da Roça</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="galeria" class="section dark-bg">
+    <section class="info-fun">
         <div class="container">
-            <h3 class="section-title center light">Nossos Ambientes</h3>
-            
-            <div class="carousel-container">
-                <button class="prev-btn" onclick="mudarSlide(-1)">&#10094;</button>
-                
-                <div class="carousel-slide fade">
-                    <img src="imagens/lazer-piscina.jpg" alt="Área de Lazer e Piscina">
-                    <div class="caption">Piscinas e Lazer Completo</div>
-                </div>
-                
-                <div class="carousel-slide fade">
-                    <img src="imagens/quarto-chale.jpg" alt="Acomodações Aconchegantes">
-                    <div class="caption">Conforto na Serra</div>
-                </div>
-
-                <div class="carousel-slide fade">
-                    <img src="imagens/cafe-detalhe.jpg" alt="Detalhes do Recanto">
-                    <div class="caption">Detalhes que Encantam</div>
-                </div>
-
-                <button class="next-btn" onclick="mudarSlide(1)">&#10095;</button>
-            </div>
-            
-            <div class="dots-container">
-                <span class="dot" onclick="slideAtual(1)"></span>
-                <span class="dot" onclick="slideAtual(2)"></span>
-                <span class="dot" onclick="slideAtual(3)"></span>
-            </div>
-        </div>
-    </section>
-
-    <section id="videos" class="section">
-        <div class="container">
-            <h3 class="section-title center">Experiências em Vídeo 🎥</h3>
-            <p class="subtitle">Dê o play e sinta o clima da serra</p>
-            
-            <div class="video-grid">
-                <div class="video-card">
-                    <video controls poster="imagens/lazer-piscina.jpg">
-                        <source src="imagens/video-apresentacao.mp4" type="video/mp4">
-                        Seu navegador não suporta a exibição de vídeos.
-                    </video>
-                    <div class="video-info"><h4>Um dia no Recanto</h4></div>
-                </div>
-
-                <div class="video-card">
-                    <video controls poster="imagens/natureza-jardim.jpg">
-                        <source src="imagens/video-natureza.mp4" type="video/mp4">
-                        Seu navegador não suporta a exibição de vídeos.
-                    </video>
-                    <div class="video-info"><h4>Conexão com a Natureza</h4></div>
+            <div class="dashed-box">
+                <h3>O que temos aqui?</h3>
+                <div class="icon-list">
+                    <div class="icon-item">🏊 Piscinas</div>
+                    <div class="icon-item">🎣 Pesque Pague</div>
+                    <div class="icon-item">🦢 Pedalinho</div>
+                    <div class="icon-item">🛌 Chalés</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="container footer-flex">
-            <div class="footer-info">
-                <h4>Recanto dos Colibris</h4>
-                <p>Santa Teresa, Espírito Santo</p>
-                <p>Contato: (27) 99999-9999</p>
-            </div>
-            <div class="footer-social">
-                <a href="https://www.instagram.com/recantodoscolibrisoficial" target="_blank">Instagram Oficial</a>
+    <section class="video-fun">
+        <div class="container text-center">
+            <h2 class="title-hand">Dê o play na alegria!</h2>
+            <div class="tv-frame">
+                <video controls poster="imagens/quarto-chale.jpg">
+                    <source src="imagens/video-natureza.mp4" type="video/mp4">
+                </video>
             </div>
         </div>
-        <div class="copy">&copy; 2025 Recanto dos Colibris.</div>
+    </section>
+
+    <footer class="footer-fun">
+        <p>Feito com ❤️ nas montanhas capixabas.</p>
+        <p>Recanto dos Colibris 🐦</p>
     </footer>
 
     <script src="script.js"></script>
